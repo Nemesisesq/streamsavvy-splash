@@ -134,7 +134,12 @@
 .keep-updated {
   display: inline;
   height: 55px;
-  width: 150px;
+  width: 180px;
+    padding: 10px 0px;
+    font-size: 15px;
+    min-width: 100px;
+    font-weight: 300;
+    letter-spacing: normal;
 }
 
 .contact{
@@ -158,7 +163,16 @@
   background: #3BBC69;
 }
 
+@media (min-width: 319px) and (max-width: 494px){
 
+   .keep-updated{
+       width:59%;
+    display:block;
+    margin: 0 auto;
+   }
+
+
+}
 @media(max-width: 540px){
 
   .show {
