@@ -371,7 +371,8 @@ footer {
 @media (min-width: 638px) and (max-width: 959px) {
 
     .poster{
-    margin: 9.5%;
+    margin-left: 9.5%;
+        margin-right: 9.5%;
     }
 }
 @media (min-width: 960px) and (max-width: 1056px){
