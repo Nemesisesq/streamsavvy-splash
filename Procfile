@@ -1,1 +1,1 @@
-web: gunicorn splash.wsgi --log-file -
+web: gunicorn streamsavvySplash.wsgi --log-file -
