@@ -5,12 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta charset="UTF-8">
-	<title>SavvySplash</title>
+	<title>StreamSavvy</title>
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
 	<link href="{% static 'css/btn.css' %}" rel="stylesheet">
     <script src="{% static 'js/bootstrap.js' %}"></script>
-    <script src="{% static 'js/jquery.js' %}"></script>
-    <script src="{% static 'js/npm.js' %}"></script>
+
 	<link href="{% static 'css/splash.css' %}" rel="stylesheet" type="text/css" >
 	<script src='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'></script>
     <script src="https://use.fonticons.com/b92fc55f.js"></script><!--Icons-->
@@ -75,22 +75,31 @@
                     <div class="poster-row">
                         <div class="poster">
                             <!--Image -->
-                            <a href="http://time.com/"><img class="img-responsive poster-logo" src="{% static 'img/time-logo.png' %}"></a>
+                            <img class="img-responsive poster-logo" src="{% static 'img/mashable-logo.png' %}">
                             <!--Article Title -->
                             <div class="tart quickfit">Why millenials are increasingly cutting the cord.</div>
                             <!--Read Article: Link -->
-                            <div class="article-link"><a href="#">Read the Article</a></div>
+                            <div class="article-link green-link">Read the Article</div>
+                            <!-- the following anchor tag and span is a temporary workaround to have the entire div clickable without making it a button -->
+                            <a href="http://mashable.com/2015/03/02/millennial-cord-cutter/" target="_blank">
+                                <span class="link-spanner"></span>
+                            </a>
                         </div>
                         <div class="poster">
-                            <a href="http://mashable.com/"><img class="img-responsive poster-logo" src="{% static 'img/mashable-logo.png' %}"></a>
+                            <img class="img-responsive poster-logo" src="{% static 'img/time-logo.png' %}">
+                            <div class="tart quickfit">7 Streaming TV Packages That Will Let You Cut the Cord For Good</div>
+                            <div class="article-link green-link">Read the Article</div>
+                            <a href="http://time.com/money/3963077/streaming-packages-cord-cutting-cable/" target="_blank">
+                                <span class="link-spanner"></span>
+                            </a>
+                        </div>
+                        <div class="poster">
+                            <img class="img-responsive poster-logo" src="{% static 'img/nyt-logo.png' %}">
                             <div class="tart quickfit">Have You Cut the Cable Cord?</div>
-                            <div class="article-link"><a href="#">Read the Article</a></div>
-                        </div>
-                        <div class="poster">
-                            <a href="http://www.nytimes.com/"><img class="img-responsive poster-logo" src="{% static 'img/nyt-logo.png' %}"></a>
-                            <div class="tart quickfit">7 Streaming TV Packages That Will Let You Cut the Cord For Good.</div>
-                            <div class="article-link"><a href="#">Read the Article</a></div>
-
+                            <div class="article-link green-link">Read the Article</div>
+                            <a href="http://takingnote.blogs.nytimes.com/2015/08/21/have-you-cut-the-cable-cord/" target="_blank">
+                                <span class="link-spanner"></span>
+                            </a>
                         </div>
                     </div>
 
