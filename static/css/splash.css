@@ -381,7 +381,7 @@ footer {
     }
 }
 
-@media(min-width: 767px){
+@media(min-width: 769px){
     .nav-icon, .just-logo{
         display: none !important;
     }
