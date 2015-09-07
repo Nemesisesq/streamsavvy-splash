@@ -10,9 +10,17 @@ $(document).ready(function () {
         };
 
         $.ajax({
-            url: '/save_email',
-            data: data
+            url: 'save_email/',
+            data: JSON.stringify(data),
+            method: 'POST',
+            contentType : 'application/json; charset=utf-8'
 
+
+        }).success(function (data) {
+            debugger;
+            console.log(data)
+        }).error(function(e){
+            console.log(e)
         })
     })
 });

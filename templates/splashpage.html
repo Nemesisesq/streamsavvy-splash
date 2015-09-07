@@ -2,126 +2,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta charset="UTF-8">
-	<title>StreamSavvy</title>
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
-	<link href="{% static 'css/btn.css' %}" rel="stylesheet">
-    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <title>StreamSavvy</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/splash.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/btn.css' %}" rel="stylesheet">
 
-	<link href="{% static 'css/splash.css' %}" rel="stylesheet" type="text/css" >
-	<script src='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'></script>
-    <script src="https://use.fonticons.com/b92fc55f.js"></script><!--Icons-->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/splash.js' %}"></script>
+    <script src="https://use.fonticons.com/b92fc55f.js"></script>
+    <script src='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'></script>
+
+    <!--Icons-->
 
 
 </head>
 
 <body id="page-top">
-    <section class="nav-hero">
+<section class="nav-hero">
 
 
-
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
             <div class="navbar-header">
-              <a href="#" class="navbar-brand">
-                <img class="img-responsive nav-logo logo-and-text" src="{% static 'img/ss_wordmark-norm-white.png' %}">
-              </a>
-              <a class="navbar-brand" href="#">
-                  <img class="img-responsive nav-logo just-logo" src="{% static 'img/ss_logo-white.png' %}">
-              </a>
+                <a href="#" class="navbar-brand">
+                    <img class="img-responsive nav-logo logo-and-text"
+                         src="{% static 'img/ss_wordmark-norm-white.png' %}">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive nav-logo just-logo" src="{% static 'img/ss_logo-white.png' %}">
+                </a>
 
-              <ul class="nav navbar-nav navbar-right">
-                <li><button href=""class=" square contact">Contact Us</button></li>
-                <li><a href="" ><i class=" icon icon-envelope-o icon-2x nav-icon"></i></a></li>                
-              </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <button href="" class=" square contact">Contact Us</button>
+                    </li>
+                    <li><a href=""><i class=" icon icon-envelope-o icon-2x nav-icon"></i></a></li>
+                </ul>
             </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
 
-     	<header>
-            <div class="header-content">
-                <div class="header-content-inner">
-                    <h1>Saving cord cutters fat stacks by<br class="h1-br"> making ditching cable easy peasy.</h1>
-                    <hr class="gray-hr">
-                    <p>We're working hard to get you<br class="mobile-p1-br"> the best, clearest info on everything you <br class="mobile-p2-br">need to know to get rid of cable and still enjoy your favorite shows.</p>
-                    <form class="form-inline" role="form">
-                        <div class="form-group">
-                            <input type="email" class="form-control email-form" id="email" placeholder="     Email Address">
-                            <button id="submitEmail" class="btn btn-green page-scroll square keep-updated">Keep Me Updated</button>
-                        </div>
-                    </form>
-                        <a href="https://www.facebook.com/pages/StreamSavvy/904023313005052" target="_blank"><i class="icon header-social-icon icon-facebook-official icon-2x"></i></a>
-                        <a href="https://twitter.com/streamsavvy"  target="_blank"><i class="icon header-social-icon icon-twitter icon-2x" target="_blank"></i></a>
-                    <p class="header-article-pointer">Related Articles</p>
-                    <span class="glyphicon glyphicon-chevron-down"></span>
-                </div>
-            </div>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Saving cord cutters fat stacks by<br class="h1-br"> making ditching cable easy peasy.</h1>
+                <hr class="gray-hr">
+                <p>We're working hard to get you<br class="mobile-p1-br"> the best, clearest info on everything you <br
+                        class="mobile-p2-br">need to know to get rid of cable and still enjoy your favorite shows.</p>
 
-    	</header>
-    </section>
-
-
-
-    <section class="related-articles">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 articles">
-                    <h1 class="articles-title">People who know what we're talking about</h1>
-                    <hr class="black-hr">
-                    <h5>Check out these related articles</h5>
-                    <div class="poster-row">
-                        <div class="poster">
-                            <!--Image -->
-                            <img class="img-responsive poster-logo" src="{% static 'img/mashable-logo.png' %}">
-                            <!--Article Title -->
-                            <div class="tart quickfit">Why millenials are increasingly cutting the cord.</div>
-                            <!--Read Article: Link -->
-                            <div class="article-link green-link">Read the Article</div>
-                            <!-- the following anchor tag and span is a temporary workaround to have the entire div clickable without making it a button -->
-                            <a href="http://mashable.com/2015/03/02/millennial-cord-cutter/" target="_blank">
-                                <span class="link-spanner"></span>
-                            </a>
-                        </div>
-                        <div class="poster">
-                            <img class="img-responsive poster-logo" src="{% static 'img/time-logo.png' %}">
-                            <div class="tart quickfit">7 Streaming TV Packages That Will Let You Cut the Cord For Good</div>
-                            <div class="article-link green-link">Read the Article</div>
-                            <a href="http://time.com/money/3963077/streaming-packages-cord-cutting-cable/" target="_blank">
-                                <span class="link-spanner"></span>
-                            </a>
-                        </div>
-                        <div class="poster">
-                            <img class="img-responsive poster-logo" src="{% static 'img/nyt-logo.png' %}">
-                            <div class="tart quickfit">Have You Cut the Cable Cord?</div>
-                            <div class="article-link green-link">Read the Article</div>
-                            <a href="http://takingnote.blogs.nytimes.com/2015/08/21/have-you-cut-the-cable-cord/" target="_blank">
-                                <span class="link-spanner"></span>
-                            </a>
-                        </div>
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                        <input type="email" class="form-control email-form" id="email" placeholder="Email Address"/>
+                        <input type="button" id="submitEmail" class="btn btn-green page-scroll square keep-updated" value="Keep Me Updated"/>
+                        <!-- <button id="submitEmail" class="btn btn-green page-scroll square keep-updated">Keep Me Updated
+                        </button> -->
                     </div>
+                </form>
+                <a href="https://www.facebook.com/pages/StreamSavvy/904023313005052" target="_blank"><i
+                        class="icon header-social-icon icon-facebook-official icon-2x"></i></a>
+                <a href="https://twitter.com/streamsavvy" target="_blank"><i
+                        class="icon header-social-icon icon-twitter icon-2x" target="_blank"></i></a>
 
+                <p class="header-article-pointer">Related Articles</p>
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </div>
+        </div>
+
+    </header>
+</section>
+
+
+<section class="related-articles">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 articles">
+                <h1 class="articles-title">People who know what we're talking about</h1>
+                <hr class="black-hr">
+                <h5>Check out these related articles</h5>
+
+                <div class="poster-row">
+                    <div class="poster">
+                        <!--Image -->
+                        <img class="img-responsive poster-logo" src="{% static 'img/mashable-logo.png' %}">
+                        <!--Article Title -->
+                        <div class="tart quickfit">Why millenials are increasingly cutting the cord.</div>
+                        <!--Read Article: Link -->
+                        <div class="article-link green-link">Read the Article</div>
+                        <!-- the following anchor tag and span is a temporary workaround to have the entire div clickable without making it a button -->
+                        <a href="http://mashable.com/2015/03/02/millennial-cord-cutter/" target="_blank">
+                            <span class="link-spanner"></span>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <img class="img-responsive poster-logo" src="{% static 'img/time-logo.png' %}">
+
+                        <div class="tart quickfit">7 Streaming TV Packages That Will Let You Cut the Cord For Good</div>
+                        <div class="article-link green-link">Read the Article</div>
+                        <a href="http://time.com/money/3963077/streaming-packages-cord-cutting-cable/" target="_blank">
+                            <span class="link-spanner"></span>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <img class="img-responsive poster-logo" src="{% static 'img/nyt-logo.png' %}">
+
+                        <div class="tart quickfit">Have You Cut the Cable Cord?</div>
+                        <div class="article-link green-link">Read the Article</div>
+                        <a href="http://takingnote.blogs.nytimes.com/2015/08/21/have-you-cut-the-cable-cord/"
+                           target="_blank">
+                            <span class="link-spanner"></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 foot-row">
+                <img class="img-responsive center-block foot-logo" src="{% static 'img/footer-logo.png' %}" alt="">
+                <img class="img-responsive center-block just-black-logo" src="{% static 'img/ssvv.png' %}">
+
+                <div class="foot-icons">
+                    <a href="https://www.facebook.com/pages/StreamSavvy/904023313005052"><i
+                            class="icon icon-facebook-official icon-2x" target="_blank"></i></a>
+                    <a href="https://twitter.com/streamsavvy"><i class="icon icon-twitter icon-2x" target="_blank"></i></a>
                 </div>
             </div>
         </div>
-    </section>
-
-	<footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 foot-row">
-                	<img class="img-responsive center-block foot-logo" src="{% static 'img/footer-logo.png' %}" alt="">
-                        <img class="img-responsive center-block just-black-logo" src="{% static 'img/ssvv.png' %}">
-                    <div class="foot-icons">
-                        <a href="https://www.facebook.com/pages/StreamSavvy/904023313005052"><i class="icon icon-facebook-official icon-2x" target="_blank"></i></a>
-                        <a href="https://twitter.com/streamsavvy"><i class="icon icon-twitter icon-2x" target="_blank"></i></a>
-                    </div>                
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
 

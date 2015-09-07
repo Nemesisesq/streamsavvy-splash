@@ -20,7 +20,7 @@ from splash import views
 
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='splashpage.html')),
-    url(r'save_email/', views.save_email),
+    url(r'^save_email/', views.save_email),
     url(r'^admin/', include(admin.site.urls)),
 
 ]

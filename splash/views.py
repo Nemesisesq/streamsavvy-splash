@@ -7,13 +7,15 @@ from splash.models import Email
 
 
 def save_email(request):
-    if request.method is 'POST':
+    if request.method == 'POST':
         the_json = json.loads(str(request.body, encoding='utf-8'))
-        e = Email(address=the_json.email)
+        e = Email(address=the_json['email'])
 
-        if e.save():
+        try:
+            e.save()
             return HttpResponse('email is saved')
 
-    return HttpResponse('There seems to have been a problem')
+        except:
+            return HttpResponse('There seems to have been a problem')
 
 
