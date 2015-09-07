@@ -2,6 +2,7 @@
  * Created by Nem on 9/6/15.
  */
 $(document).ready(function () {
+    $.notify.defaults({className:'success'});
 
     $('#submitEmail').on('click', function() {
         debugger;
@@ -17,6 +18,7 @@ $(document).ready(function () {
 
 
         }).success(function (data) {
+            $('#submitEmail').notify(data, {position:'bottom-center'});
             debugger;
             console.log(data)
         }).error(function(e){
