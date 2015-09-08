@@ -24,6 +24,7 @@ $(document).ready(function () {
 
             }).success(function (data) {
                 $('#submitEmail').notify(data, {position: 'bottom-center'});
+                $('#email').val("");
                 debugger;
                 console.log(data)
             }).error(function (e) {
