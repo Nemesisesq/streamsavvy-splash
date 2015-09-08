@@ -34,7 +34,7 @@ body {
     position: relative;
     float: left;
 }
-.logo-and-text{
+.logo-and-text, .foot-logo{
     display: none !important;
     
 }
@@ -129,7 +129,7 @@ header .header-content .header-content-inner .header-article-pointer {
 .form-inline .form-group input {
     display: inline;
     height: 55px;
-    border: 1px solid;
+    border: none;
     margin-right: 5px;
     width: 280px;
     -moz-border-radius: 0px;
@@ -242,9 +242,8 @@ footer {
 footer {
   border-color: #d7d9d9;
   border-style: solid;
-  border-width: .5px;
+  border-width: 1px;
   background-color: white;
-  box-shadow: 0 0 3px 1px gray;
     position: relative;
     max-width: 100%;
     bottom:0px;
@@ -286,7 +285,7 @@ footer {
 }
 
 .just-black-logo{
-    display: none;
+    display: block;
         left:0px;
     float: left;
     max-width: 33%;
@@ -336,9 +335,7 @@ footer {
         padding-top: 4%;
         padding-bottom: 4%;
     }
-    .foot-logo{
-        display: none;
-    }
+
     .tart {
         padding-top: 30px;
     }
@@ -382,10 +379,10 @@ footer {
 }
 
 @media(min-width: 769px){
-    .nav-icon, .just-logo{
+    .nav-icon, .just-logo, .just-black-logo{
         display: none !important;
     }
-        .logo-and-text{
+        .logo-and-text,.foot-logo{
         display: inline !important;
     }
 }
