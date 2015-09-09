@@ -22,19 +22,16 @@ $(document).ready(function () {
                 contentType: 'application/json; charset=utf-8'
 
 
-            }).success(function (data) {
-                $('#submitEmail').notify(data, {position: 'bottom-center'});
-                $('#email').val("");
-                debugger;
-                console.log(data)
-            }).error(function (e) {
-                console.log(e)
-            })
-        } else {
-            $('#email').notify("Please enter a valid email", {position:'bottom-center'});
-        }
-    })
-        $('#poster1').click(function () {
+<<<<<<< HEAD
+        }).success(function (data) {
+            $('#submitEmail').notify(data, {position:'bottom-center'});
+            debugger;
+            console.log(data)
+        }).error(function(e){
+            console.log(e)
+        })
+    });
+    $('#poster1').click(function () {
         var redirectWindow = window.open('http://mashable.com/2015/03/02/millennial-cord-cutter/', '_blank');
         redirectWindow.location;
     });
@@ -47,4 +44,19 @@ $(document).ready(function () {
         var redirectWindow = window.open('http://takingnote.blogs.nytimes.com/2015/08/21/have-you-cut-the-cable-cord/', '_blank');
         redirectWindow.location;
     });
+
+=======
+            }).success(function (data) {
+                $('#submitEmail').notify(data, {position: 'bottom-center'});
+                $('#email').val("");
+                debugger;
+                console.log(data)
+            }).error(function (e) {
+                console.log(e)
+            })
+        } else {
+            $('#email').notify("Please enter a valid email", {position:'bottom-center'});
+        }
+    })
+>>>>>>> a6e6a30ab08856867c002033fd0ba34c14af9852
 });

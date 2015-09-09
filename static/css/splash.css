@@ -21,7 +21,7 @@ body {
     border: 0px;
     margin: 0;
     padding-top: 2%;
-    margin-bottom: 3%;
+    margin-bottom: 0;
 
 }
 
@@ -171,7 +171,7 @@ hr {
       border-width: 1px;
       background-color: white;
       box-shadow: 0 0 1px 1px #d7d9d9;
-      white-space: normal;/*weird little workaround that does word wrapping past max width*/
+      white-space: normal !important;/*weird little workaround that does word wrapping past max width*/
 
       height: 400px;
       width: 300px;
@@ -304,6 +304,8 @@ footer {
     padding-bottom: 1.25%;
 }
 
+
+
 @media(max-width: 415px) {
     header .header-content .header-content-inner h1 {
 
@@ -376,6 +378,9 @@ footer {
     .h1-br{
         display: none;
     }
+    .navbar-inverse{
+        margin-bottom: 3%;
+    }
 }
 
 @media(min-width: 769px){
@@ -385,6 +390,8 @@ footer {
         .logo-and-text,.foot-logo{
         display: inline !important;
     }
+
+
 }
 
 @media (min-width: 638px) and (max-width: 959px) {

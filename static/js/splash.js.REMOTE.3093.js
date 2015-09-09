@@ -34,17 +34,4 @@ $(document).ready(function () {
             $('#email').notify("Please enter a valid email", {position:'bottom-center'});
         }
     })
-        $('#poster1').click(function () {
-        var redirectWindow = window.open('http://mashable.com/2015/03/02/millennial-cord-cutter/', '_blank');
-        redirectWindow.location;
-    });
-    $('#poster2').click(function () {
-        var redirectWindow = window.open('http://time.com/money/3963077/streaming-packages-cord-cutting-cable/', '_blank');
-        redirectWindow.location;
-
-    });
-    $('#poster3').click(function () {
-        var redirectWindow = window.open('http://takingnote.blogs.nytimes.com/2015/08/21/have-you-cut-the-cable-cord/', '_blank');
-        redirectWindow.location;
-    });
 });
